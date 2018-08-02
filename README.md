@@ -1,28 +1,33 @@
 # Simple Todo Application using Laravel with user authentication
 
-## Build Setup
+## Build Setup for running in local
+#### Setup 
 
 ``` bash
 # Install dependencies
-    npm install
+
     composer update
+
 #Copy .env.example to .env
 
 # Create a database and update the details in .env
-   DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
+
+    DB_CONNECTION=mysql
+    DB_HOST=localhost
     DB_PORT=3306
-    DB_DATABASE=homestead
-    DB_USERNAME=homestead
-    DB_PASSWORD=secret
+    DB_DATABASE=mytodos
+    DB_USERNAME=xxxx
+    DB_PASSWORD=xxx
 
 # Run the following php command
 
 php artisan key:generate
 
-# Run development verion
+php artisan migrate
 
-npm run dev
+# Run development version
+
+php artisan serve
 
 
 ```
